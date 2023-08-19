@@ -9,7 +9,7 @@ function App() {
       <body>
         <div>
           <h1>Hello world here</h1>
-          <Greet name="Tojo"/>
+          <Greet/>
         </div>
       </body>
     </div>
