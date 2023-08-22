@@ -1,18 +1,27 @@
 //import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter,Routes,Route} from "react-router-dom";
 
-import {Greet} from "./comp/my-comp.js"
+import {Index} from "./comp/App_home";
+import {Home} from "./comp/Home";
+import {About} from "./comp/About";
+import {Counter} from "./comp/Counter";
+import {TodoList} from "./comp/TodoList";
+import {NoPage} from "./comp/NoPage";
 
 function App() {
   return (
-    <div className="App">
-      <body>
-        <div>
-          <h1>Hello world here</h1>
-          <Greet/>
-        </div>
-      </body>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Index />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="counter" element={<Counter />} />
+          <Route path="todo-list" element={<TodoList />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
