@@ -16,6 +16,9 @@ export function Index(){
 		          <li>
 		            <Link to="/todo-list">Todo list</Link>
 		          </li>
+		          <li>
+		          	<Link to="/timer">Timer</Link>
+		          </li>
 		        </ul>
 			</nav>
 			<div class="outlet">
