@@ -2,7 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 export function Index(){
 	return(
 		<div>
-			<nav class="navigator">
+			<nav className="navigator">
 				<ul>
 		          <li>
 		            <Link to="/">Home</Link>
@@ -18,6 +18,12 @@ export function Index(){
 		          </li>
 		          <li>
 		          	<Link to="/timer">Timer</Link>
+		          </li>
+		          <li>
+		          	<Link to="/ref">Ref</Link>
+		          </li>
+		          <li>
+		          	<Link to="/context">Context</Link>
 		          </li>
 		        </ul>
 			</nav>

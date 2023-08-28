@@ -14,7 +14,7 @@ export function Counter(){
 		setCur(cur+1);
 	}
 	return(
-		<div class="greet">
+		<div className="greet">
 			<h1>{data}</h1>
 			<button onClick={buttonHandler}>click me</button>
 		</div>

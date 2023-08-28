@@ -9,6 +9,8 @@ import {Counter} from "./comp/Counter";
 import {TodoList} from "./comp/TodoList";
 import {NoPage} from "./comp/NoPage";
 import {Timer} from "./comp/Timer";
+import {Ref} from "./comp/Ref";
+import {ThemeCont} from "./context/ThemeContext";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="counter" element={<Counter />} />
           <Route path="todo-list" element={<TodoList />} />
           <Route path="timer" element={<Timer />} />
+          <Route path="ref" element={<Ref />} />
+          <Route path="context" element={<ThemeCont />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

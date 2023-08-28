@@ -21,15 +21,15 @@ export function TodoList(){
 		);
 	}
 	return (
-		<div class="todolist">
-			<div class="list-form">
+		<div className="todolist">
+			<div className="list-form">
 				<h1>Implemented the list element</h1>
 				<form method="post" onSubmit={formHandler}>
 					<label htmlFor="data">Enter data here : </label>
 					<input name="data" />
 				</form>
 			</div>
-			<div class="list-elements">
+			<div className="list-elements">
 				<ListRender data={data} />
 			</div>
 		</div>
